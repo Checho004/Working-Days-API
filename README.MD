@@ -1,5 +1,11 @@
 # Working Days API
 
+**API Desplegada en:** https://working-days-api-psi.vercel.app
+
+**Repositorio:** https://github.com/Checho004/Working-Days-API
+
+## Descripción
+
 API REST para calcular fechas hábiles en Colombia considerando:
 
 - Días laborales (lunes a viernes)
@@ -7,11 +13,30 @@ API REST para calcular fechas hábiles en Colombia considerando:
 - Hora de almuerzo (12:00 PM - 1:00 PM)
 - Festivos colombianos oficiales
 
+## Prueba la API en Producción
+
+La API está desplegada y lista para usar. Prueba estos endpoints:
+
+**Health Check:** Para revisar el estado del servidor de la API
+
+```
+https://working-days-api-psi.vercel.app/health
+```
+
+**Ejemplos de uso:**
+
+````
+https://working-days-api-psi.vercel.app/calculate?hours=1
+https://working-days-api-psi.vercel.app/calculate?days=1
+https://working-days-api-psi.vercel.app/calculate?days=1&hours=4
+https://working-days-api-psi.vercel.app/calculate?date=2025-04-10T15:00:00.000Z&days=5&hours=4
+
+
 ## Instalación
 
 ```bash
 npm install
-```
+````
 
 ## Ejecución Local
 
