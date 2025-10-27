@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // A que version de js se quiere que ts compile
+    "module": "commonjs", //le indica a tsc  que Sistemas de modulos usar al compilar el codigo .ts a .js
+    "lib": ["ES2020"], //Bibliotecas de js disponibles para ts
+    "outDir": "./dist", //a que folder iran el codigo fuente y archivos compilado a de .ts a .js
+    "rootDir": "./src", //folder en donde esta todo el codigo fuente .ts
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
