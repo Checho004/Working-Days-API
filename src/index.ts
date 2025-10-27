@@ -65,4 +65,10 @@ async function startServer(): Promise<void> {
   }
 }
 
-startServer();
+// Solo inicia el servidor si NO estamos en producción (Vercel)
+if (process.env.NODE_ENV !== 'production') {
+  startServer();
+}
+
+// Exporta la app para Vercel
+export default app;
